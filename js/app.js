@@ -1,6 +1,21 @@
 const getDigits = () => {
   return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 };
+
+const getEvenDigits = () => {
+  // Declare variable
+  let result;
+
+  // Assign result even digits
+  result = getDigits().filter(digit => {
+    const isEven = digit % 2 === 0;
+    return isEven;
+  });
+
+  // Return even digits
+  return result;
+};
+
 var logDigits = () => {
   console.log(getDigits());
 };
@@ -35,4 +50,5 @@ module.exports = {
   defenders,
   midfielders,
   attackers,
+  getEvenDigits,
 };
