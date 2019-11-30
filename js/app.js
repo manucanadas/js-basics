@@ -26,13 +26,18 @@ const isEven = number => {
 
 const giveEvenNumbers = top => {
   let result = [];
-  for (let i = 0; i < top; i++) {
+  for (let i = 0; i <= top; i++) {
     if (isEven(i)) {
       result.push(i);
     }
   }
-  alert(result.join(", "));
   return result;
+};
+
+const onNumberChange = () => {
+  const inputValue = document.getElementById("number-input").value;
+  if (!isNaN(inputValue))
+    document.getElementById("even-result").innerHTML = giveEvenNumbers(inputValue).join(", ");
 };
 
 var logDigits = () => {
