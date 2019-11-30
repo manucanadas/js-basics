@@ -5,6 +5,6 @@ describe("tests app js helper functions", () => {
     const result = getDigits();
     expect(result.length).toBe(10);
     expect(result[0]).toBe(0);
-    expect(result[9]).toBe(9);
+    expect(result[result.length - 1]).toBe(9);
   });
 });
