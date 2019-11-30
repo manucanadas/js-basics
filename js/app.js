@@ -1,5 +1,7 @@
 const getDigits = () => {
-  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let text;
+  text = "Palabra";
+  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, text];
 };
 var logDigits = () => {
   console.log(getDigits());
