@@ -1,4 +1,4 @@
-const { getDigits } = require("../app");
+const { getDigits } = require("../js/app");
 
 describe("tests app js helper functions", () => {
   it("gets the 10 digits", () => {
