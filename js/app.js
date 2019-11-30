@@ -16,8 +16,27 @@ const getEvenDigits = () => {
   return result;
 };
 
+const getEvenDigits2 = () => {
+  return [0, 2, 4, 6, 8];
+};
+
+const isEven = number => {
+  return number % 2 === 0;
+};
+
+const giveEvenNumbers = top => {
+  let result = [];
+  for (let i = 0; i < top; i++) {
+    if (isEven(i)) {
+      result.push(i);
+    }
+  }
+  alert(result.join(", "));
+  return result;
+};
+
 var logDigits = () => {
-  console.log(getDigits());
+  alert(getDigits());
 };
 
 var p1 = { id: 1, name: "Dalmasso", number: 1, position: "keeper" };
